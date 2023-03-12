@@ -3,13 +3,11 @@ using namespace std;
 
 class Student
 {
-public:
-    int group;
 
-private:
     int age;
 
 public:
+    int group;
     void display()
     {
         cout << age << " " << group << endl;
