@@ -8,6 +8,19 @@ class Student
 
 public:
     int group;
+
+    Student() /// Creating custom defauls constructor
+    {
+        cout << "Constructor called" << endl;
+    }
+
+    Student(int s, int x) /// Creating custom parametrised constructor
+    {
+        cout << "Contstructor 2 called" << endl;
+        age = s;
+        group = x;
+    }
+
     void display()
     {
         cout << age << " " << group << endl;
