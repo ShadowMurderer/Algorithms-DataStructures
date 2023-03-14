@@ -14,11 +14,12 @@ public:
         cout << "Constructor called" << endl;
     }
 
-    Student(int s, int x) /// Creating custom parametrised constructor
+    Student(int s, int group) /// Creating custom parametrised constructor
     {
+        cout << "this " << this << endl;
         cout << "Contstructor 2 called" << endl;
         age = s;
-        group = x;
+        this->group = group;
     }
 
     void display()
@@ -29,6 +30,19 @@ public:
     int getAge()
     {
         return age;
+    }
+
+    int getGroup()
+    {
+        return group;
+    }
+
+    void setGroup(int group)
+    {
+        if (group < 0)
+        {
+            this->group = group;
+        }
     }
 
     void setAge(int a, int password)

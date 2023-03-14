@@ -5,14 +5,19 @@ using namespace std;
 
 int main()
 {
-    Student s1; /// Creating objects statically
-    Student s2, s3;
 
-    Student *s5 = new Student(21, 4); /// Creating objects dynamically
-    (*s5).display();
+    Student s1(50, 5); /// Creating objects statically
+    cout << "Adress of s1 " << &s1 << endl;
+    Student s2(20, 200);
+    cout << "Adress of s2 " << &s2 << endl;
 
-    Student s4(20, 5);
-    s4.display();
+    cout << s1.display() << endl;
+
+    // Student *s5 = new Student(21, 4); /// Creating objects dynamically
+    // (*s5).display();
+
+    // Student s4(20, 5);
+    // s4.display();
 
     // s1.group = 1;
     // s1.setAge(20);  /// Declaring age value using external funciton
