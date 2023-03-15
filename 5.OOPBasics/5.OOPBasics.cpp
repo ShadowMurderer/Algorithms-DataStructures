@@ -11,7 +11,8 @@ int main()
     Student s2(20, 200);
     cout << "Adress of s2 " << &s2 << endl;
 
-    cout << s1.display() << endl;
+    s1.display();
+    s2.display();
 
     // Student *s5 = new Student(21, 4); /// Creating objects dynamically
     // (*s5).display();
