@@ -70,13 +70,13 @@ int main()
     char surName[10];
 
     cout << "Please tell us your name" << endl; /// Stores the name and surname
-    cin.getline(name, 10);
+    cin.getline(name, 10);                      /// Stores user input for name
     cout << "Now your surname" << endl;
     cin.getline(surName, 10);
 
-    cout << "So your name is " << name << endl; /// Outputs the name and surname and the lenght of each
+    cout << "So your name is " << name << endl; /// Outputs the name and surname
     cout << "And your surname is " << surName << endl;
-    cout << "And the lenght of your name is: " << length(name) << " digits" << endl;
+    cout << "And the lenght of your name is: " << length(name) << " digits" << endl; /// Outputs lenght of array
     cout << "And the lenght of yout surname is: " << length(surName) << " digits" << endl;
 
     int len1 = strlen(name); /// Finds out the number of characters stored

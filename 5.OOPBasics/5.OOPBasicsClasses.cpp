@@ -20,6 +20,7 @@ public:
         cout << "Contstructor 2 called" << endl;
         age = s;
         this->group = group;
+        cout << group << endl;
     }
 
     void display()
