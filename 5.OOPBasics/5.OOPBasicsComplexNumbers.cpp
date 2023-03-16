@@ -16,7 +16,7 @@ int main()
     int choice;
     cin >> choice;
 
-    if (choice == 1)
+    if (choice == 1) /// Sum of complex numbers scenario
     {
         c1.add(c2);
         cout << "Complex numbers added" << endl;
@@ -24,7 +24,7 @@ int main()
         c2.print();
     }
 
-    else if (choice == 2)
+    else if (choice == 2) /// Multiplication of complex numbers scenario
     {
         c1.multi(c2);
         cout << "Complex numbers multiplied" << endl;
