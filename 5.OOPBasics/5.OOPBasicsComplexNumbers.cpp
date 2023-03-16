@@ -10,7 +10,7 @@ int main()
     cin >> real1 >> imaginary1;
     cin >> real2 >> imaginary2;
 
-    complexNumber c1(real1, imaginary1);
+    complexNumber c1(real1, imaginary1); /// Complex numbers initialization
     complexNumber c2(real2, imaginary2);
 
     int choice;
@@ -24,11 +24,16 @@ int main()
         c2.print();
     }
 
-    else if (choice == 2) {
+    else if (choice == 2)
+    {
         c1.multi(c2);
         cout << "Complex numbers multiplied" << endl;
         c1.print();
         c2.print();
     }
-    
+
+    else
+    {
+        return 0;
+    }
 }
