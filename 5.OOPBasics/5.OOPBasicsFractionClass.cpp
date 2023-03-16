@@ -18,7 +18,7 @@ public:
         cout << this->numerator << "/" << this->denominator << endl;
     }
 
-    void add(Fraction f2)
+    void add(Fraction const &f2)
     {
         int lcm = this->denominator * f2.denominator;
         int x = lcm / this->denominator;
@@ -28,6 +28,16 @@ public:
         /// Store result in f1
         this->numerator = num;
         this->denominator = lcm;
+
+        simplify();
+    }
+
+    void multiply(Fraction const &f2) {
+        int mulNum = this->numerator * f2.numerator;
+        int mulDel = this->denominator * f2.denominator;
+
+        this->numerator = mulNum;
+        this->denominator = mulDel;
 
         simplify();
     }
@@ -43,6 +53,9 @@ public:
                 gcd = i;
             }
         }
+
+        /// Inbuilt function for gcd
+        /// __gcd(a, b);
 
         numerator = numerator / gcd;
         denominator = denominator / gcd;
