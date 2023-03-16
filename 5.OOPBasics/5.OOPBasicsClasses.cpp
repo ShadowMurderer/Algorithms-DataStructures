@@ -23,6 +23,11 @@ public:
         cout << group << endl;
     }
 
+    ~Student()
+    {
+        cout << "Destructor was called " << endl;
+    }
+
     void display()
     {
         cout << age << " " << group << endl;
@@ -42,8 +47,9 @@ public:
     {
         if (group < 0)
         {
-            this->group = group;
+            return;
         }
+        this->group = group;
     }
 
     void setAge(int a, int password)
