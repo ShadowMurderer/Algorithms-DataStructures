@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+#include "complexNumber.h"
+
+using namespace std;
+
+int main()
+{
+    vector<complexNumber> c;
+    complexNumber arr[100];
+
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int k;
+        cin >> k;
+        complexNumber *number = new complexNumber(k);
+        c.push_back(*number);
+        arr[i] = *(new complexNumber(k));
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        //        c[i].print();
+        //        cout << "\n";
+        arr[i].print();
+    }
+    return 0;
+}
